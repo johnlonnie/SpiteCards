@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SpiteCards")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9a1d8b37f2d38a97798daa48d8f58bbf9ce999dd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a77b9e6b0a5c40cf31d0c48f24e10ea02fecbffd")]
 [assembly: System.Reflection.AssemblyProductAttribute("SpiteCards")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SpiteCards")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

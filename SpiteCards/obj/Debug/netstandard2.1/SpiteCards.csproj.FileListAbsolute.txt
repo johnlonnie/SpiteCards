@@ -94,3 +94,4 @@ M:\RoundsModDevSetup\Repos\SpiteCards\SpiteCards\bin\Debug\netstandard2.1\MonoMo
 M:\RoundsModDevSetup\Repos\SpiteCards\SpiteCards\obj\Debug\netstandard2.1\SpiteCards.csproj.Up2Date
 M:\RoundsModDevSetup\Repos\SpiteCards\SpiteCards\obj\Debug\netstandard2.1\SpiteCards.dll
 M:\RoundsModDevSetup\Repos\SpiteCards\SpiteCards\obj\Debug\netstandard2.1\SpiteCards.pdb
+M:\RoundsModDevSetup\Repos\SpiteCards\SpiteCards\bin\Debug\netstandard2.1\AssetsEmbedded\spitecardart

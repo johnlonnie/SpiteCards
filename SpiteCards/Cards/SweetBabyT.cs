@@ -43,7 +43,7 @@ namespace SpiteCards.Cards
         }
         protected override GameObject GetCardArt()
         {
-            return null;
+            return SpiteCards.SweetBabyTObj;
         }
         protected override CardInfo.Rarity GetRarity()
         {
@@ -78,7 +78,7 @@ namespace SpiteCards.Cards
                 {
                     positive = true,
                     stat = "Projectile Speed",
-                    amount = "200%",
+                    amount = "50%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };

@@ -19,7 +19,7 @@ namespace SpiteCards.Cards
             gun.gravity = 2f;
             gun.projectileColor = Color.yellow;
             gun.reflects = 0;
-            gun.reloadTime = 5f;
+            gun.reloadTime = 4f;
             gun.projectileSpeed = 0.5f;
             gun.timeBetweenBullets = 0.02f;
             gun.projectileSize = 0.25f;
@@ -28,8 +28,8 @@ namespace SpiteCards.Cards
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
-            gunAmmo.maxAmmo = 50;
-            gun.bursts = gunAmmo.maxAmmo;
+            gunAmmo.maxAmmo = 1;
+            gun.bursts = 50;
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
@@ -47,7 +47,8 @@ namespace SpiteCards.Cards
         }
         protected override GameObject GetCardArt()
         {
-            return null;
+            return SpiteCards.RunningAwayWithItObj;
+
         }
         protected override CardInfo.Rarity GetRarity()
         {
@@ -75,7 +76,7 @@ namespace SpiteCards.Cards
                 {
                     positive = true,
                     stat = "Reload Time",
-                    amount = "5 sec",
+                    amount = "4 sec",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()

@@ -18,7 +18,7 @@ namespace SpiteCards.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            gun.destroyBulletAfter = 1.00f;
+            gun.destroyBulletAfter = 1.50f;
             gun.reflects = 100;
             statModifiers.health = 0.85f;
             
@@ -49,11 +49,11 @@ namespace SpiteCards.Cards
         }
         protected override string GetDescription()
         {
-            return "100 bounces, but projectiles only last 1 second.";
+            return "100 bounces, but projectiles only last 1.5 seconds.";
         }
         protected override GameObject GetCardArt()
         {
-            return null;
+            return SpiteCards.WillBuildObj;
         }
         protected override CardInfo.Rarity GetRarity()
         {

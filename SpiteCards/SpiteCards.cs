@@ -4,6 +4,13 @@ using UnboundLib.Cards;
 using SpiteCards.Cards;
 using HarmonyLib;
 using CardChoiceSpawnUniqueCardPatch.CustomCategories;
+using static UnityEngine.ParticleSystem;
+using UnityEngine;
+using UnboundLib.Utils;
+using ModdingUtils.Utils;
+using System.Net;
+using Jotunn.Utils;
+
 
 
 namespace SpiteCards
@@ -23,6 +30,11 @@ namespace SpiteCards
         public const string Version = "0.0.0"; // What version are we on (major.minor.patch)?
         public const string ModInitials = "SC";
         public static SpiteCards instance { get; private set; }
+        private static readonly AssetBundle Bundle = Jotunn.Utils.AssetUtils.LoadAssetBundleFromResources("spitecardart", typeof(SpiteCards).Assembly);
+        public static GameObject RunningAwayWithItObj = Bundle.LoadAsset<GameObject>("C_RunningAwayWithIt");
+        public static GameObject WillBuildObj = Bundle.LoadAsset<GameObject>("C_WillBuild");
+        public static GameObject CheeseGrinderObj = Bundle.LoadAsset<GameObject>("C_CheeseGrinder");
+        public static GameObject SweetBabyTObj = Bundle.LoadAsset<GameObject>("C_SweetBabyT");
 
 
         void Awake()
@@ -32,12 +44,15 @@ namespace SpiteCards
             harmony.PatchAll();
         }
         void Start()
-        {
-            instance = this;
+        { 
+            
             CustomCard.BuildCard<SweetBabyT>();
             CustomCard.BuildCard<WillBuild>();
             CustomCard.BuildCard<RunningAwayWithIt>();
             CustomCard.BuildCard<CheeseGrater>();
+
+            instance = this;
         }
+
     }
 }

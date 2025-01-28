@@ -95,7 +95,7 @@ namespace SpiteCards.Cards
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
             statModifiers.sizeMultiplier = 2.5f;
             statModifiers.gravity = 2f;
-            statModifiers.health = 4f;
+            statModifiers.health = 3f;
             statModifiers.secondsToTakeDamageOver = 2f;
             statModifiers.movementSpeed = 0.5f;
             gun.projectileSpeed = 1;
@@ -151,7 +151,7 @@ namespace SpiteCards.Cards
 
         protected override string GetTitle()
         {
-            return "Cheese Grater";
+            return "Cheese Grinder";
         }
         protected override string GetDescription()
         {
@@ -159,7 +159,7 @@ namespace SpiteCards.Cards
         }
         protected override GameObject GetCardArt()
         {
-            return null;
+            return SpiteCards.CheeseGrinderObj;
         }
         protected override CardInfo.Rarity GetRarity()
         {
@@ -187,7 +187,7 @@ namespace SpiteCards.Cards
                 {
                     positive = true,
                     stat = "Health",
-                    amount = "4X",
+                    amount = "3X",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
